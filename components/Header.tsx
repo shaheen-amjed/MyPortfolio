@@ -4,7 +4,7 @@ interface HeaderIn{
 
 export default function Header({ act }: HeaderIn) {
   return (
-    <div className="w-[1000px] mx-auto p-4">
+    <div className="lg:w-[40vw]  mx-auto p-4">
       <div className="flex items-center mobile-header gap-6 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20">
         {/* Profile Image */}
         <img
