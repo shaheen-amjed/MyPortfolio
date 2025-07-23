@@ -2,7 +2,7 @@ export default function LeftSlide() {
     return (
         <>
         
-            <div className="w-full mt-[-20] max-w-4xl mx-auto px-4">
+            <div className="w-full mt-[-20] max-w-4xl mr-[-200px] ml-auto pl-4">
                 <img
                     src="/github.webp"
                     alt="banner"

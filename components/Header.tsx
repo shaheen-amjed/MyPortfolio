@@ -1,11 +1,10 @@
 interface HeaderIn{
     act: number;
-    cont: number;
 }
 
-export default function Header({ act, cont }: HeaderIn) {
+export default function Header({ act }: HeaderIn) {
   return (
-    <div className="w-full max-w-4xl mx-auto p-4">
+    <div className="w-[1000px] mx-auto p-4">
       <div className="flex items-center mobile-header gap-6 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20">
         {/* Profile Image */}
         <img
@@ -22,8 +21,7 @@ export default function Header({ act, cont }: HeaderIn) {
 
         {/* Levels */}
         <div className="ml-auto flex flex-col text-right text-white">
-          <span className="text-lg level font-semibold">Activity Level: {act}</span>
-          <span className="text-lg level font-semibold">Contribution Level: {cont}</span>
+          <span className="text-lg level font-semibold">Developer Level: {act}</span>
         </div>
       </div>
     </div>

@@ -1,8 +1,7 @@
 'use client'
 
 import Header from '@/components/Header'
-import LeftSlide from '@/components/leftSlide'
-import Button from '@/components/Link'
+import About from '@/components/RightSide'
 import { useEffect, useState } from 'react'
 
 export default function GitHubLevels() {
@@ -39,9 +38,9 @@ export default function GitHubLevels() {
 
   return (
     <>
-    <Header act={activityLevel} cont={contributionLevel}/>   
+    <Header act={activityLevel}/>   
     <br />
-    <LeftSlide /> 
+      <About />
     </>
   )
 }
