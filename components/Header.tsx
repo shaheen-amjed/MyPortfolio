@@ -11,7 +11,7 @@ export default function Header({ act, cont }: HeaderIn) {
         <img
           src="/github-pfp.webp"
           alt="Profile"
-          className="w-24 h-24 rounded-lg border border-white/30"
+          className="w-24 h-24 border-2 border-black rounded-lg"
         />
 
         {/* Name and Role */}
