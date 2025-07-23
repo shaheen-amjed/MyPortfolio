@@ -20,7 +20,22 @@
 }
 
 body {
-  background: var(--background);
+  background-image: url('/background-image.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 440px) {
+  .mobile-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .level {
+    text-align: center;
+  }
 }
