@@ -43,3 +43,8 @@ body {
     width: 100px;
   }
 }
+
+
+body {
+  zoom: 0.65;
+}

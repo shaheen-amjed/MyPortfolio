@@ -1,12 +1,11 @@
 'use client'
 
 import Header from '@/components/Header'
-import About from '@/components/RightSide'
+import About from '@/components/About'
 import { useEffect, useState } from 'react'
 
 export default function GitHubLevels() {
   const [activityLevel, setActivityLevel] = useState(0)
-  const [contributionLevel, setContributionLevel] = useState(0)
 
   useEffect(() => {
     const fetchGitHubData = async () => {
@@ -19,15 +18,7 @@ export default function GitHubLevels() {
           0
         )
 
-        const totalContributions = data.contributions.reduce(
-          (sum: number, item: any) => sum + item.count,
-          0
-        )
-
-        const calculatedContributionLevel = Math.floor(totalContributions / 10)
-
         setActivityLevel(totalActivityLevel)
-        setContributionLevel(calculatedContributionLevel)
       } catch (err) {
         console.error('Error fetching GitHub data:', err)
       }
@@ -40,7 +31,7 @@ export default function GitHubLevels() {
     <>
     <Header act={activityLevel}/>   
     <br />
-      <About />
+    <About />
     </>
   )
 }

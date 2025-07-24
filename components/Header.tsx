@@ -1,11 +1,24 @@
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+
 interface HeaderIn{
     act: number;
 }
 
 export default function Header({ act }: HeaderIn) {
+
+  useGSAP(() => {
+    gsap.from('.header', {
+      y: -30,
+      opacity: 0,
+      duration: 1
+    })
+  }, [])
+
+
   return (
-    <div className="lg:w-[40vw]  mx-auto p-4">
-      <div className="flex items-center mobile-header gap-6 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20">
+    <div className="w-[60vw] header  mx-auto p-4">
+      <div className="flex  items-center mobile-header gap-6 bg-white/10 backdrop-blur-md rounded-2xl p-6 shadow-lg border-2 border-black">
         {/* Profile Image */}
         <img
           src="/github-pfp.webp"
