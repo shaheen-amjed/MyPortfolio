@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Button from "./Link";
 import Skills from "./Skills";
 import { useGSAP } from '@gsap/react'
@@ -139,13 +140,15 @@ export default function About() {
             <hr className="mt-5 border-white/30" />
 
             <div className="flex flex-col gap-5 mt-5">
-              <h1 className="text-white text-5xl">Achievements:</h1>
+              <h1 className="text-white text-4xl">Achievements:</h1>
               <h1 className="text-white text-2xl">Projects: 9</h1>
               <h1 className="text-white text-2xl">Clients: 1</h1>
-              <h1 className="text-white text-2xl">Languages: 8</h1>
+              <h1 className="text-white text-2xl">Languages: 8+</h1>
               <h1 className="text-white text-2xl">Skills: Very good...</h1>
             </div>
-
+                <div className="flex justify-center pt-5 items-center flex-wrap">
+                      <Link href="/projects" className="text-white bg-[#8B0000] hover:bg-[red] transition rounded p-2">View Projects</Link>
+                </div>
             <Skills />
           </div>
         </div>

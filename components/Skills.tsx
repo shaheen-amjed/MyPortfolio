@@ -2,7 +2,7 @@ export default function Skills() {
     return (
         <>
         <div>
-            <h1 className="text-white text-5xl my-5">Skills:</h1>
+            <h1 className="text-white text-4xl my-5">Skills:</h1>
             <div className="border border-white/20 rounded-xl p-4 flex flex-wrap gap-2 bg-white/5">
                 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
                 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
