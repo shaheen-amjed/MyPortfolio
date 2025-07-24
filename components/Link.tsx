@@ -1,8 +1,9 @@
 import Link from "next/link";
+import { ReactNode } from "react";
 
 type ButtonProps = {
   go: string;
-  content: string;
+  content: ReactNode;
   className?: string;
 };
 
