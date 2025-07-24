@@ -7,7 +7,12 @@ module.exports = {
     "./node_modules/shadcn-ui/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['"Inter Tight"', 'sans-serif'],
+        archivo: ['"Archivo Black"', 'sans-serif'],
+      },
+    },
   },
   plugins: [
     require("tw-animate-css"),

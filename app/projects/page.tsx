@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import Link from "next/link"
 
 export default function Projects() {
 
@@ -66,9 +67,8 @@ export default function Projects() {
     return (
         <>
         <div className="flex flex-col flex-wrap justify-center items-center gap-10 zoom-1">
-            <Button
-            go="/"
-            content={
+            <Link
+            href="/" className="text-white text-xl font-medium bg-[#8B0000] hover:bg-red-600 transition-all duration-200 rounded-xl px-6 py-3 shadow-md hover:shadow-lg">
                 <div className="flex items-center gap-2">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -80,13 +80,11 @@ export default function Projects() {
                 >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
                 </svg>
-                <span>Back to Home</span>
+                <span className="font-archivo">Back to Home</span>
                 </div>
-            }
-            className="text-white text-xl font-medium bg-[#8B0000] hover:bg-red-600 transition-all duration-200 rounded-xl px-6 py-3 shadow-md hover:shadow-lg"
-            />
-            {projects.map((project) => (
-                <>
+            </Link>
+            {projects.map((project, index) => (
+                <div key={index}>
                 <Card className="p-4 hover:scale-[1.050] bg-white/20 backdrop-blur-lg transition-all">
                     <CardContent className="flex flex-col md:flex-row items-start gap-6">
                         {/* Left side: Info */}
@@ -115,7 +113,7 @@ export default function Projects() {
                         </div>
                     </CardContent>
                 </Card>
-                </>
+                </div>
             ))}
         </div>
         </>
