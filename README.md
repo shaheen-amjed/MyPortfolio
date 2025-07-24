@@ -1,5 +1,7 @@
 # My Portfolio - Shaheen Amjed
 
+<img src="./image.png"></img>
+
 this is my portfolio website, its not the first and not the better, i have created better than it but i like to just update from a while to a while with the new things i learn.
 
 url:
